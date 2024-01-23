@@ -8,19 +8,19 @@ const HomePage = () => {
   return (
 
     <div className={styles['home-container']}>
-      <NavigationButton route="/science" className={styles['cool-button']}>
-        Science
+      <NavigationButton route="/news/entertainment" className={styles['cool-button']}>
+        Entertainment
       </NavigationButton>
 
-      <NavigationButton route="/sports" className={styles['awesome-button']}>
+      <NavigationButton route="/news/sports" className={styles['awesome-button']}>
         Sports
       </NavigationButton>
 
-      <NavigationButton route="/business" className={styles['cool-button']}>
+      <NavigationButton route="/news/business" className={styles['cool-button']}>
         Business
       </NavigationButton>
 
-      <NavigationButton route="/tech" className={styles['awesome-button']}>
+      <NavigationButton route="/news/tech" className={styles['awesome-button']}>
         Technology
       </NavigationButton>
 

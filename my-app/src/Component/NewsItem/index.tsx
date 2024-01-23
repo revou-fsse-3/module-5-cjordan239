@@ -8,12 +8,11 @@ export interface NewsItemProps {
     url:string;
     image_url:string;
     author:string
-    keywords: string
 }
 
 
 
-const NewsItem: React.FC<NewsItemProps> = ({categories, title, description, url, image_url, author, keywords}) => {
+const NewsItem: React.FC<NewsItemProps> = ({categories, title, description, url, image_url, author}) => {
     return (
         <div className={styles['news-app']}>
             <div className = {styles['news-item']}>
@@ -22,7 +21,7 @@ const NewsItem: React.FC<NewsItemProps> = ({categories, title, description, url,
                 <h4>Author: {author}</h4>
                 <h3><a href={url}>{title}</a></h3> 
                 <p>{description} <span className={styles['seemore-link']}><a href={url}> <br /> See More.. </a></span></p>
-                <span>{keywords}</span>
+
             </div>
         </div>
     );

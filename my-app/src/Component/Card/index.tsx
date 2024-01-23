@@ -1,18 +1,51 @@
-import './styles/card.module.css'
+// import './styles/card.module.css'
 
-const Card = () => {
+// const Card = () => {
 
     
+//     return (
+//         <div className="cardIndex">
+//             <div className="cardIndex1">
+
+//             </div>
+
+//             <div className="cardIndex2">
+
+//             </div>
+//         </div>
+//     )
+// }
+
+// export default Card
+
+
+import { ReactNode, useMemo } from "react"
+// import styles from './Card.module.css';
+
+
+interface Props {
+    children: ReactNode;
+    padding?: number;
+}
+
+const Card = ({children, padding} : Props) => {
+
+    const paddingStyle = useMemo (
+        () => ({
+            'padding' : `${padding}px`
+        }),
+        [padding]
+    )
+
     return (
-        <div className="cardIndex">
-            <div className="cardIndex1">
 
-            </div>
-
-            <div className="cardIndex2">
-
-            </div>
+        <div style={paddingStyle}>
+            {children}
         </div>
+        // <div className='sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 max-w-[1800px] mx-auto py-4' style={paddingStyle}>
+        //     {children}
+        // </div>
+
     )
 }
 

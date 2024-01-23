@@ -1,6 +1,6 @@
 
 
-import { NavBar } from "@/Component"
+import { Footer, NavBar } from "@/Component"
 import { ReactNode } from "react"
 
 interface Props {
@@ -17,6 +17,7 @@ const Layout = ({ children } : Props) => {
                 {children}
               
             </div>
+            <Footer />
         </>
     )
 }
