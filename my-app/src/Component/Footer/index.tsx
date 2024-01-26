@@ -3,6 +3,7 @@
 import React from 'react';
 import styles from './styles/style-footer.module.css';
 
+
 const Footer = () => {
   return (
     <footer className={styles['footer']}>
@@ -37,6 +38,7 @@ const Footer = () => {
           Buy me a coffee <img src="#" alt="" />
         </a>
       </div>
+
     </footer>
   );
 };
