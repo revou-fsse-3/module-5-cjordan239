@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Unit test for Footer should render footer with "Buy me a coffee" link 1`] = `
+<a
+  href="#"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  Buy me a coffee 
+  <img
+    alt=""
+    src="#"
+  />
+</a>
+`;
+
+exports[`Unit test for Footer should render footer with social media icons 1`] = `
+<img
+  alt="Facebook"
+  class="icon"
+  src="https://th.bing.com/th/id/OIP.K61w8tCEKaKN--vUwjeSSwHaHa?w=191&h=191&c=7&r=0&o=5&dpr=1.4&pid=1.7"
+/>
+`;
+
+exports[`Unit test for Footer should render footer with social media icons 2`] = `
+<img
+  alt="Twitter"
+  class="icon"
+  src="https://th.bing.com/th/id/OIP.erK8SN73oi9FYRoCu1ZN8QHaHa?rs=1&pid=ImgDetMain"
+/>
+`;
+
+exports[`Unit test for Footer should render footer with social media icons 3`] = `
+<img
+  alt="Instagram"
+  class="icon"
+  src="https://th.bing.com/th/id/OIP.-ZirgQE5pr8e7htQWowJIgHaHa?rs=1&pid=ImgDetMain"
+/>
+`;
